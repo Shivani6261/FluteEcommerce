@@ -1,0 +1,297 @@
+.banner_image {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner_image img{
+    width: 100%;
+}
+
+
+.btn {
+	width: 100%;
+	border: 1px solid black;
+	margin-block: 3px;
+}
+.footer {
+    background: #152F4F;
+    color: white;
+  }
+  .footer .links ul {
+    list-style-type: none;
+  }
+  .footer .links li a {
+    color: white;
+    transition: color 0.2s;
+  }
+  .footer .links li a:hover {
+    text-decoration: none;
+    color: #4180CB;
+  }
+  .footer .about-company i {
+    font-size: 25px;
+  }
+  .footer .about-company a {
+    color: white;
+    transition: color 0.2s;
+  }
+  .footer .about-company a:hover {
+    color: #4180CB;
+  }
+  .footer .location i {
+    font-size: 18px;
+  }
+  .footer .copyright p {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .card-img-top {
+	transition: transform 0.3s ease-in-out;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+}
+
+.dropdown-menu {
+	width: max-content;
+	padding-inline: 22px;
+	padding-block: 50px;
+}
+
+
+.dropdown-menu ul{
+  list-style-type: none;
+}
+
+.product-card {
+	width: 21rem;
+	cursor: pointer;
+	/* margin-inline: 48px; */
+  border: none;
+}
+.product-card .card-body {
+	padding-inline: 0;
+}
+.price-text {
+	font-size: 1.1rem;
+}
+del.price-text {
+	color: #ed0505;
+}
+.star-reviews i {
+	color: orange;
+}
+.review-container .card .bi-star-fill{
+  color: orange;
+}
+.product-card .card-body a {
+	text-decoration: none;
+}
+.slick-prev::before, .slick-next::before{
+  color: chocolate;
+}
+.category-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.category-image {
+  max-width: 100%;
+  height: 217px;
+  margin-bottom: 10px;
+}
+.achievement-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.achievement-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.achievement-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.team-card {
+  perspective: 1000px;
+  transition: transform 0.5s;
+  height: 500px;
+}
+
+.team-card:hover {
+  transform: rotateY(180deg);
+}
+
+.team-card .card-body {
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+}
+
+.team-card:hover .card-body {
+  transform: rotateY(180deg);
+}
+
+.team-card .card-back {
+  display: none;
+  transform: rotateY(180deg);
+  color: #000; /* Adjust text color */
+}
+
+.team-card:hover .card-back {
+  display: block;
+  transform: rotateY(0deg);
+}
+
+.team-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.team-card {
+	border: none;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.filter-btn {
+	border: none;
+	width: max-content;
+}
+.custom-search:focus {
+	box-shadow: none;
+}
+.custom-search-container {
+	/* border: 1px solid; */
+	border-radius: 28px;
+	padding-inline-start: 22px;
+	/* height: 56px; */
+	box-shadow: 1px 1px 1px #aba8a7;
+}
+.custom-search-button {
+	border: none;
+}
+.nav-icons-container .nav-link {
+  position: relative;
+}
+.nav-icons-container .nav-link i{
+	font-size: 1.5rem;
+  
+}
+.nav-icons-container .nav-link span {
+	position: absolute;
+	top: 2px;
+	right: -2px;
+	display: block;
+}
+.search-focused {
+	box-shadow: 2px 2px 2px #92d1e8;
+}
+.social-links a {
+	width: min-content;
+	border: none;
+	border-radius: 40px;
+}
+
+.product-details-section {
+  padding: 80px 0;
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+.gallery-thumb {
+  max-width: 100%;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-thumb:hover {
+  opacity: 0.8;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  color: #007bff;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: black;
+}
+
+.selected-image {
+  border: 2px solid black;
+}
+
+.product-details {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+
+
+.product-details p {
+  color: #555;
+}
+
+
+@media (min-width: 768px) {
+  /* Apply hover effect only on larger screens */
+  .achievement-card:hover {
+      transform: scale(1.1);
+  }
+
+  .achievement-card:hover img {
+      transform: scale(1.2);
+  }
+
+  .achievement-card:hover .achievement-overlay {
+      opacity: 1;
+  }
+}
+
+/* Always show overlay on smaller screens */
+@media (max-width: 767px) {
+  .achievement-card .achievement-overlay {
+      opacity: 1;
+  }
+  .dropdown-menu{
+    width: auto;
+  }
+  .banner_image{
+    height: auto;
+  }
+  .product-card{
+    width: 100%;
+  }
+}

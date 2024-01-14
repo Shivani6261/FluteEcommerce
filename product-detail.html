@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./src/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+</head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="/">FluteShop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <h4>Wind Instruments</h4>
+                            <ul>
+                              <li><a class="dropdown-item" href="products.html">Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Piccolos</a></li>
+                              <li><a class="dropdown-item" href="products.html">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <h4>Flute Types</h4>
+                            <ul>
+                              <li><a class="dropdown-item" href="products.html">Beginner Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Professional Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Maintenance Tools</a></li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <h4>Material</h4>
+                            <ul>
+                              <li><a class="dropdown-item" href="products.html">Wooden Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Metal Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Cleaning Supplies</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about-us.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contact-us.html">Contact us</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-icons-container">
+                  <li class="nav-item">
+                    <a href="" class="nav-link"><i class="bi bi-bag"></i>
+                      <span class="badge rounded-pill text-bg-info">2</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link"><i class="bi bi-person-circle"></i>
+                      </a>
+                  </li>
+                </ul>
+                <form class="d-flex custom-search-bar" role="search">
+                  <div class="input-group custom-search-container mb-3">
+                    <input type="text" placeholder="search products" class="form-control custom-search">
+                    <div class="input-group-append"><button class="btn custom-search-button"><i class="bi bi-search"></i></button></div>
+                  </div>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main >
+<section class="product-details-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="productGallery" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="public/pdp_1.jpg" alt="Product Image 1" class="product-image img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/pdp_2.jpg" alt="Product Image 2" class="product-image img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/pdp_3.jpg" alt="Product Image 3" class="product-image img-fluid">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productGallery"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productGallery"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <img src="public/pdp_1.jpg" alt="Thumbnail 1"
+                             class="gallery-thumb img-fluid selected-image">
+                    </div>
+                    <div class="col-4">
+                        <img src="public/pdp_2.jpg" alt="Thumbnail 2"
+                             class="gallery-thumb img-fluid">
+                    </div>
+                    <div class="col-4">
+                        <img src="public/pdp_3.jpg" alt="Thumbnail 3"
+                             class="gallery-thumb img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="product-details">
+                    <h2 class="mb-4">Professional Concert Flute</h2>
+                    <div class="star-reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></div>
+                    <del class="price-text ">Rs 4,999</del>     
+                    <p class="lead">Rs 2,999.99</p>
+                    <p class="text-muted">Availability: In Stock</p>
+                    <hr>
+                    <p class="product-description">
+                        This professional concert flute is crafted with precision to meet the needs of advanced
+                        musicians. Its rich, warm tone and exceptional playability make it ideal for orchestral and
+                        solo performances. The flute is made from high-quality materials and features a silver-plated
+                        finish for a classic look.
+                    </p>
+                    <p class="product-description">
+                        Key Features:
+                    <ul>
+                        <li>Professional-grade materials</li>
+                        <li>Silver-plated finish</li>
+                        <li>Rich and warm tone</li>
+                        <li>Perfect for orchestral and solo performances</li>
+                    </ul>
+                    </p>
+                    <button class="btn btn-outline-primary">Buy Now</button>
+                    <button class="btn btn-outline-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="specifications-section">
+            <h3 class="mb-4">Specifications</h3>
+            <ul>
+                <li><strong>Material:</strong> Silver-plated</li>
+                <li><strong>Key:</strong> C</li>
+                <li><strong>Tone:</strong> Rich and Warm</li>
+                <li><strong>Level:</strong> Professional</li>
+                <li><strong>Body Material:</strong> Sterling Silver</li>
+                <li><strong>Headjoint Material:</strong> Solid Silver</li>
+                <li><strong>Footjoint:</strong> B-Foot</li>
+                <li><strong>Keys:</strong> Open Hole</li>
+                <li><strong>Case Included:</strong> Yes</li>
+                <li><strong>Warranty:</strong> 2 years</li>
+            </ul>
+        </div>
+        <!-- Customer Reviews Section -->
+        <div class="reviews-section">
+            <h3 class="mb-4">Customer Reviews</h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Existing Reviews -->
+                    <div class="review-container">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Great Flute!</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">by John Doe</h6>
+                                <p class="card-text">I absolutely love this flute. It has a beautiful sound and is easy to play.</p>
+                                <div class="d-flex">
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div><i class="bi bi-star-fill"></i></div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Amazing Sound Quality</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">by Jane Smith</h6>
+                                <p class="card-text">The flute exceeded my expectations! The sound quality is exceptional, and it's a joy to play.</p>
+                                <div class="d-flex">
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div><i class="bi bi-star-fill"></i></div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Perfect for Beginners</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">by Michael Johnson</h6>
+                                <p class="card-text">As a beginner, I found this flute easy to learn on. It's lightweight and produces a beautiful tone.</p>
+                                <div class="d-flex">
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div class="mr-2"><i class="bi bi-star-fill"></i></div>
+                                    <div><i class="bi bi-star-fill"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more review cards as needed -->
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <!-- Add Review Form -->
+                    <div class="review-form-container">
+                        <h5 class="form-title">Add Your Review</h5>
+                        <form id="reviewForm">
+                            <div class="form-group">
+                                <label for="customerName">Your Name:</label>
+                                <input type="text" class="form-control" id="customerName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewTitle">Title:</label>
+                                <input type="text" class="form-control" id="reviewTitle" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewText">Your Review:</label>
+                                <textarea class="form-control" id="reviewText" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="rating">Your Rating:</label>
+                                <div id="rating" class="d-flex">
+                                    <i class="bi bi-star-fill" data-rating="1"></i>
+                                    <i class="bi bi-star-fill" data-rating="2"></i>
+                                    <i class="bi bi-star-fill" data-rating="3"></i>
+                                    <i class="bi bi-star-fill" data-rating="4"></i>
+                                    <i class="bi bi-star-fill" data-rating="5"></i>
+                                </div>
+                                <input type="hidden" name="rating" id="rating-input" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+<section id="newly_arrived" class="container my-3 mb-2">
+    <h2>Recommended Products</h2>
+    <div class="d-md-flex my-2 justify-content-between">
+      <div class="product-card card">
+        <img src="public/product1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h3 class="card-title">Premium Flute</h3>
+            <div class="star-reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></div>
+            <p class="card-text">
+                <del class="price-text ">Rs 4,999</del>
+                <span class="price-text">Rs 2,999</span>
+            </p>
+            <div class="action_buttons">
+                <a href="#" class="btn btn-outline-primary">Buy Now</a>
+            <a href="#" class="btn btn-outline-primary">Add to cart</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="product-card card">
+      <img src="public/product1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h3 class="card-title">Premium Flute</h3>
+          <div class="star-reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></div>
+          <p class="card-text">
+              <del class="price-text ">Rs 4,999</del>
+              <span class="price-text">Rs 2,999</span>
+          </p>
+          <div class="action_buttons">
+              <a href="#" class="btn btn-outline-primary">Buy Now</a>
+          <a href="#" class="btn btn-outline-primary">Add to cart</a>
+          </div>
+          
+      </div>
+  </div>
+  <div class="product-card card">
+    <img src="public/product1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h3 class="card-title">Premium Flute</h3>
+        <div class="star-reviews"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></div>
+        <p class="card-text">
+            <del class="price-text ">Rs 4,999</del>
+            <span class="price-text">Rs 2,999</span>
+        </p>
+        <div class="action_buttons">
+            <a href="#" class="btn btn-outline-primary">Buy Now</a>
+        <a href="#" class="btn btn-outline-primary">Add to cart</a>
+        </div>
+        
+    </div>
+</div>
+        
+        
+        
+    </div>
+    
+</section>
+<section id="newsletter">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Subscribe to Our Newsletter</h3>
+                    <form id="newsletterForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+<footer>
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <h2>FluteShop</h2>
+              <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+              <p><a href="#"><i class="bi bi-facebook me-2"></i></a><a href="#"><i class="bi bi-instagram me-2"></i></a><a href="#"><i class="bi bi-whatsapp me-2"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                <ul class="m-0 p-0">
+                  <li>- <a href="#">Lorem ipsum</a></li>
+                  <li>- <a href="#">Nam mauris velit</a></li>
+                  <li>- <a href="#">Etiam vitae mauris</a></li>
+                  <li>- <a href="#">Fusce scelerisque</a></li>
+                  <li>- <a href="#">Sed faucibus</a></li>
+                  <li>- <a href="#">Mauris efficitur nulla</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+              <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+              <p class="mb-0"><i class="fa fa-phone mr-3"></i>+91 987654321</p>
+              <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col copyright">
+              <p class=""><small class="text-white-50">© 2024. All Rights Reserved.</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    // Interactive star rating script
+    $(document).ready(function() {
+        $('#rating .bi-star-fill').on('mouseover', function() {
+            let rating = $(this).data('rating');
+            highlightStars(rating);
+        });
+
+        $('#rating .bi-star-fill').on('mouseleave', function() {
+            let currentRating = $('#rating-input').val();
+            highlightStars(currentRating);
+        });
+
+        $('#rating .bi-star-fill').on('click', function() {
+            let rating = $(this).data('rating');
+            $('#rating-input').val(rating);
+        });
+
+        function highlightStars(rating) {
+            $(`#rating .bi-star-fill`).css('color','');
+            for (let i = 1; i <= rating; i++) {
+                $(`#rating .bi-star-fill[data-rating=${i}]`).css('color','orange');
+            }
+        }
+    });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

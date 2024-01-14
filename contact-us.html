@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./src/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+</head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">FluteShop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <h4>Wind Instruments</h4>
+                            <ul>
+                              <li><a class="dropdown-item" href="products.html">Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Piccolos</a></li>
+                              <li><a class="dropdown-item" href="products.html">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <h4>Flute Types</h4>
+                            <ul>
+                              <li><a class="dropdown-item" href="products.html">Beginner Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Professional Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Maintenance Tools</a></li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <h4>Material</h4>
+                            <ul>
+                              <li><a class="dropdown-item" href="products.html">Wooden Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Metal Flutes</a></li>
+                              <li><a class="dropdown-item" href="products.html">Cleaning Supplies</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about-us.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact-us.html">Contact us</a>
+                  </li>
+                </ul>
+                <form class="d-flex custom-search-bar" role="search">
+                  <div class="input-group custom-search-container mb-3">
+                    <input type="text" placeholder="search products" class="form-control custom-search">
+                    <div class="input-group-append"><button class="btn custom-search-button"><i class="bi bi-search"></i></button></div>
+                  </div>
+              </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main >
+<section class="contact-section mt-5" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-muted">Have questions or need assistance? Feel free to reach out to us using the
+                    contact form, and we'll get back to you as soon as possible.</p>
+                <p class="text-muted">Flute Ecommerce<br>
+                    123 Melody Lane<br>
+                    Music City, USA</p>
+                <p class="text-muted">Email: info@flutecommerce.com<br>
+                    Phone: (555) 123-4567</p>
+
+                <!-- Social Media Links -->
+                <div class="social-links mt-3">
+                    <a href="#" target="_blank" class="btn btn-outline-dark btn-social mx-1">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-outline-success btn-social mx-1">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-social mx-1">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xs-12 about-company">
+              <h2>FluteShop</h2>
+              <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+              <p><a href="#"><i class="bi bi-facebook me-2"></i></a><a href="#"><i class="bi bi-instagram me-2"></i></a><a href="#"><i class="bi bi-whatsapp me-2"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xs-12 links">
+              <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                <ul class="m-0 p-0">
+                  <li>- <a href="#">Lorem ipsum</a></li>
+                  <li>- <a href="#">Nam mauris velit</a></li>
+                  <li>- <a href="#">Etiam vitae mauris</a></li>
+                  <li>- <a href="#">Fusce scelerisque</a></li>
+                  <li>- <a href="#">Sed faucibus</a></li>
+                  <li>- <a href="#">Mauris efficitur nulla</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+              <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+              <p class="mb-0"><i class="fa fa-phone mr-3"></i>+91 987654321</p>
+              <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col copyright">
+              <p class=""><small class="text-white-50">© 2024. All Rights Reserved.</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
